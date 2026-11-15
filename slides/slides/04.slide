@@ -1,0 +1,59 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', display: 'flex', flexDirection: 'column' }}>
+  <Box style={{ height: 64, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+    <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>Method: validate before believing</Text>
+    <Text style={{ fontSize: 16, color: '#FFFFFF', opacity: 0.8 }}>04 · Method</Text>
+  </Box>
+
+  <Box style={{ marginTop: 30, flexDirection: 'row', alignItems: 'stretch', gap: 12 }}>
+    <Box style={{ flex: 1, borderTop: '3px solid #1E4FA8', background: '#F7F9FC', padding: '18px 20px', flexDirection: 'column', gap: 10 }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#3D7BD9' }}>01</Text>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1A2230', lineHeight: 1.25 }}>Explore</Text>
+      <Text style={{ fontSize: 18, color: '#4A5568', lineHeight: 1.5 }}>Distributions, correlations, gender tests. Feature space: income + spending, z-scored.</Text>
+    </Box>
+
+    <Box style={{ width: 24, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 24, color: '#8B97A8' }}>→</Text>
+    </Box>
+
+    <Box style={{ flex: 1, borderTop: '3px solid #1E4FA8', background: '#F7F9FC', padding: '18px 20px', flexDirection: 'column', gap: 10 }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#3D7BD9' }}>02</Text>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1A2230', lineHeight: 1.25 }}>Cluster</Text>
+      <Text style={{ fontSize: 18, color: '#4A5568', lineHeight: 1.5 }}>K-Means, 100 restarts, k swept from 2 to 10 so that the choice is visible.</Text>
+    </Box>
+
+    <Box style={{ width: 24, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 24, color: '#8B97A8' }}>→</Text>
+    </Box>
+
+    <Box style={{ flex: 1, borderTop: '3px solid #1E4FA8', background: '#F7F9FC', padding: '18px 20px', flexDirection: 'column', gap: 10 }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#3D7BD9' }}>03</Text>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1A2230', lineHeight: 1.25 }}>Validate</Text>
+      <Text style={{ fontSize: 18, color: '#4A5568', lineHeight: 1.5 }}>Four internal indices, 30 bootstrap resamples, four alternative algorithms.</Text>
+    </Box>
+
+    <Box style={{ width: 24, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ fontSize: 24, color: '#8B97A8' }}>→</Text>
+    </Box>
+
+    <Box style={{ flex: 1, borderTop: '3px solid #1E4FA8', background: '#F7F9FC', padding: '18px 20px', flexDirection: 'column', gap: 10 }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#3D7BD9' }}>04</Text>
+      <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1A2230', lineHeight: 1.25 }}>Deploy</Text>
+      <Text style={{ fontSize: 18, color: '#4A5568', lineHeight: 1.5 }}>Six classifiers on the segment labels; 5-fold CV and a 70/30 hold-out.</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ marginTop: 28, flexDirection: 'row', alignItems: 'center', gap: 28, borderTop: '1px solid #D6DCE5', borderBottom: '1px solid #D6DCE5', paddingTop: 18, paddingBottom: 18 }}>
+    <Text style={{ fontSize: 16, color: '#8B97A8', letterSpacing: 1 }}>OBJECTIVE</Text>
+    <Text style={{ fontSize: 22, color: '#1A2230' }}>J = Σₖ Σ x∈Cₖ ‖ x − μₖ ‖²</Text>
+    <Text style={{ fontSize: 18, color: '#4A5568', lineHeight: 1.45 }}>minimised over K disjoint clusters; the number of clusters is not part of the objective.</Text>
+  </Box>
+
+  <Box style={{ marginTop: 26, background: '#E8EFF8', borderLeft: '4px solid #1E4FA8', padding: '18px 24px' }}>
+    <Text style={{ fontSize: 20, color: '#1A2230', lineHeight: 1.5 }}>Each step carries a check: <span style={{ fontWeight: 'bold' }}>k is argued, and the partition is tested against resampling and against other algorithms</span> before any business reading is attempted.</Text>
+  </Box>
+
+  <Box style={{ position: 'absolute', top: 610, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>Mall Customer Segmentation · Course Project</Text>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>04 / 11</Text>
+  </Box>
+</Slide>

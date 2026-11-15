@@ -1,0 +1,20 @@
+{
+  "k": 5,
+  "silhouette": 0.5547,
+  "davies_bouldin": 0.5722,
+  "calinski_harabasz": 248.65,
+  "inertia": 65.57,
+  "n_iter": 4,
+  "silhouette_optimal_k": 5,
+  "bootstrap_ARI_mean": 0.9795,
+  "bootstrap_ARI_std": 0.0253,
+  "three_feature_silhouette": 0.4166,
+  "two_feature_silhouette": 0.5547,
+  "segments": {
+    "C0: Frugal (low income, low spend)": 23,
+    "C1: Impulsive (low income, high spend)": 22,
+    "C2: Standard (average income & spend)": 81,
+    "C3: Conservative (affluent, low spend)": 35,
+    "C4: Target (affluent, high spend)": 39
+  }
+}

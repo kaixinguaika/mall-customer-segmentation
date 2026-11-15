@@ -1,0 +1,4 @@
+,Age,Income,Spending
+Age,1.0,-0.012,-0.327
+Income,-0.012,1.0,0.01
+Spending,-0.327,0.01,1.0

@@ -1,0 +1,45 @@
+{
+  "n_rows": 200,
+  "n_cols": 5,
+  "columns": [
+    "CustomerID",
+    "Gender",
+    "Age",
+    "Income",
+    "Spending"
+  ],
+  "missing_values": {
+    "CustomerID": 0,
+    "Gender": 0,
+    "Age": 0,
+    "Income": 0,
+    "Spending": 0
+  },
+  "duplicated_rows": 0,
+  "duplicated_ids": 0,
+  "dtypes": {
+    "CustomerID": "int64",
+    "Gender": "str",
+    "Age": "int64",
+    "Income": "int64",
+    "Spending": "int64"
+  },
+  "value_ranges": {
+    "Age": [
+      18,
+      70
+    ],
+    "Income": [
+      15.0,
+      137.0
+    ],
+    "Spending": [
+      1,
+      99
+    ]
+  },
+  "gender_counts": {
+    "Female": 112,
+    "Male": 88
+  }
+}

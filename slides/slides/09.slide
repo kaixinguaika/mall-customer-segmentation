@@ -1,0 +1,45 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', display: 'flex', flexDirection: 'column' }}>
+  <Box style={{ height: 64, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+    <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>Assigning a new customer costs one lookup</Text>
+    <Text style={{ fontSize: 16, color: '#FFFFFF', opacity: 0.8 }}>09 · Deployment</Text>
+  </Box>
+
+  <Box style={{ marginTop: 26, flexDirection: 'row', gap: 40 }}>
+    <Box style={{ flex: 1, flexDirection: 'column', gap: 16 }}>
+      <Box style={{ flexDirection: 'row', gap: 40 }}>
+        <Box style={{ flexDirection: 'column' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 6 }}>
+            <Text style={{ fontSize: 56, fontWeight: 'bold', color: '#1E4FA8', lineHeight: 1 }}>97.5%</Text>
+            <Text style={{ fontSize: 15, color: '#8B97A8', marginBottom: 6 }}>CV</Text>
+          </Box>
+          <Text style={{ fontSize: 16, color: '#4A5568', marginTop: 4 }}>5-fold, RBF SVM</Text>
+        </Box>
+        <Box style={{ flexDirection: 'column' }}>
+          <Box style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 6 }}>
+            <Text style={{ fontSize: 56, fontWeight: 'bold', color: '#1E4FA8', lineHeight: 1 }}>93.3%</Text>
+            <Text style={{ fontSize: 15, color: '#8B97A8', marginBottom: 6 }}>hold-out</Text>
+          </Box>
+          <Text style={{ fontSize: 16, color: '#4A5568', marginTop: 4 }}>60 unseen customers</Text>
+        </Box>
+      </Box>
+
+      <Text style={{ fontSize: 19, color: '#4A5568', lineHeight: 1.5 }}>Six classifiers were tried; all exceeded 94% CV accuracy, so the simplest competitive model would do. Errors fall only between adjacent segments, never between distant ones.</Text>
+      <Text style={{ fontSize: 19, color: '#4A5568', lineHeight: 1.5 }}>Feature importance confirms the geometry: spending 0.46, income 0.44, age 0.09, gender 0.004.</Text>
+
+      <Box style={{ marginTop: 6, border: '1px solid #D9534F', padding: '14px 18px', flexDirection: 'column', gap: 8 }}>
+        <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#D9534F', letterSpacing: 1 }}>THE HONEST BASELINE</Text>
+        <Text style={{ fontSize: 18, color: '#1A2230', lineHeight: 1.45 }}>From demographics alone (gender + age): <span style={{ fontWeight: 'bold', color: '#D9534F' }}>40.0%</span> — the majority-class rate. The 97.5% recovers the clustering rule; it is not evidence that segment membership is predictable from who a customer is.</Text>
+      </Box>
+    </Box>
+
+    <Box style={{ width: 460, flexDirection: 'column', gap: 8 }}>
+      <Image src="assets/boundary.png" style={{ width: 460, height: 368, objectFit: 'contain' }} />
+      <Text style={{ fontSize: 14, color: '#8B97A8', lineHeight: 1.4 }}>Classifier decision surface in the income–spending plane: the regions reproduce the Voronoi cells of the five centroids.</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ position: 'absolute', top: 610, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>Mall Customer Segmentation · Course Project</Text>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>09 / 11</Text>
+  </Box>
+</Slide>

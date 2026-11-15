@@ -1,0 +1,6 @@
+algorithm,n_clusters,noise_points,ARI_vs_kmeans,silhouette
+K-Means (k=5),5,0,1.0,0.5547
+Bisecting K-Means,5,0,0.6587,0.3842
+Agglomerative (Ward),5,0,0.942,0.5538
+Gaussian Mixture,5,0,0.9565,0.5537
+DBSCAN (eps=0.47),2,11,0.2734,0.3963

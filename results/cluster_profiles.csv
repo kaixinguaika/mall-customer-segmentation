@@ -1,0 +1,6 @@
+Cluster,n,age_mean,age_std,income_mean,income_std,spending_mean,spending_std,female_share,mean_customer_value,share,segment
+2,22,25.27,5.26,25.73,7.57,79.36,10.5,0.59,79.36,0.11,"Impulsive (low income, high spend)"
+4,23,45.22,13.23,26.3,7.89,20.91,13.02,0.61,20.91,0.115,"Frugal (low income, low spend)"
+0,81,42.72,16.45,55.3,8.99,49.52,6.53,0.59,49.52,0.405,Standard (average income & spend)
+1,39,32.69,3.73,86.54,16.31,82.13,9.36,0.54,82.13,0.195,"Target (affluent, high spend)"
+3,35,41.11,11.34,88.2,16.4,17.11,9.95,0.46,17.11,0.175,"Conservative (affluent, low spend)"

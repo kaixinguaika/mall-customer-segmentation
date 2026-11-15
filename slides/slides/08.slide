@@ -1,0 +1,66 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', display: 'flex', flexDirection: 'column' }}>
+  <Box style={{ height: 64, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+    <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>One segment, one action</Text>
+    <Text style={{ fontSize: 16, color: '#FFFFFF', opacity: 0.8 }}>08 · Implication</Text>
+  </Box>
+
+  <Box style={{ marginTop: 24, flexDirection: 'row', paddingBottom: 10, borderBottom: '1px solid #1E4FA8' }}>
+    <Text style={{ width: 250, fontSize: 14, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>SEGMENT</Text>
+    <Text style={{ width: 470, fontSize: 14, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>ACTION</Text>
+    <Text style={{ flex: 1, fontSize: 14, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>WHY THIS ONE</Text>
+  </Box>
+
+  <Box style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+    <Box style={{ width: 250, flexDirection: 'column', gap: 2 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1A2230' }}>C4 Target</Text>
+      <Text style={{ fontSize: 15, color: '#8B97A8' }}>39 customers · 19.5%</Text>
+    </Box>
+    <Text style={{ width: 470, fontSize: 19, color: '#1A2230' }}>Loyalty tiers and early access</Text>
+    <Text style={{ flex: 1, fontSize: 17, color: '#4A5568', lineHeight: 1.45 }}>Highest spend, aged 33 ± 4: the cheapest group to keep and the most expensive to lose.</Text>
+  </Box>
+
+  <Box style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+    <Box style={{ width: 250, flexDirection: 'column', gap: 2 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1A2230' }}>C3 Conservative</Text>
+      <Text style={{ fontSize: 15, color: '#8B97A8' }}>35 customers · 17.5%</Text>
+    </Box>
+    <Text style={{ width: 470, fontSize: 19, color: '#1A2230' }}>Premium assortment, personal shopping</Text>
+    <Text style={{ flex: 1, fontSize: 17, color: '#4A5568', lineHeight: 1.45 }}>Affluent but disengaged: the largest revenue upside, and the group where discounts would only cost margin.</Text>
+  </Box>
+
+  <Box style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+    <Box style={{ width: 250, flexDirection: 'column', gap: 2 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1A2230' }}>C2 Standard</Text>
+      <Text style={{ fontSize: 15, color: '#8B97A8' }}>81 customers · 40.5%</Text>
+    </Box>
+    <Text style={{ width: 470, fontSize: 19, color: '#1A2230' }}>Retention and cross-selling</Text>
+    <Text style={{ flex: 1, fontSize: 17, color: '#4A5568', lineHeight: 1.45 }}>Two customers in five: a small change in basket size here moves the total more than any campaign elsewhere.</Text>
+  </Box>
+
+  <Box style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+    <Box style={{ width: 250, flexDirection: 'column', gap: 2 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1A2230' }}>C1 Impulsive</Text>
+      <Text style={{ fontSize: 15, color: '#8B97A8' }}>22 customers · 11.0%</Text>
+    </Box>
+    <Text style={{ width: 470, fontSize: 19, color: '#1A2230' }}>Trends, social media, instalments</Text>
+    <Text style={{ flex: 1, fontSize: 17, color: '#4A5568', lineHeight: 1.45 }}>Young and spending beyond their income: liquidity, not willingness, is the constraint — price cuts miss it.</Text>
+  </Box>
+
+  <Box style={{ flexDirection: 'row', alignItems: 'center', paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+    <Box style={{ width: 250, flexDirection: 'column', gap: 2 }}>
+      <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#1A2230' }}>C0 Frugal</Text>
+      <Text style={{ fontSize: 15, color: '#8B97A8' }}>23 customers · 11.5%</Text>
+    </Box>
+    <Text style={{ width: 470, fontSize: 19, color: '#1A2230' }}>Value packs, coupons, essentials</Text>
+    <Text style={{ flex: 1, fontSize: 17, color: '#4A5568', lineHeight: 1.45 }}>Price-sensitive and older: promotions drive visits, new assortment does not.</Text>
+  </Box>
+
+  <Box style={{ marginTop: 14, background: '#E8EFF8', borderLeft: '4px solid #1E4FA8', padding: '12px 20px' }}>
+    <Text style={{ fontSize: 19, color: '#1A2230', lineHeight: 1.5 }}>Segment membership should steer <span style={{ fontWeight: 'bold' }}>assortment and service</span>, not the price of an identical product.</Text>
+  </Box>
+
+  <Box style={{ position: 'absolute', top: 610, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>Mall Customer Segmentation · Course Project</Text>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>08 / 11</Text>
+  </Box>
+</Slide>

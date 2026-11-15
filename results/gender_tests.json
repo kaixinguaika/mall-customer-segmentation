@@ -1,0 +1,23 @@
+{
+  "Age": {
+    "female_mean": 38.1,
+    "male_mean": 39.81,
+    "t": -0.837,
+    "p_welch": 0.4036,
+    "mannwhitney_p": 0.6242
+  },
+  "Income": {
+    "female_mean": 59.25,
+    "male_mean": 62.23,
+    "t": -0.793,
+    "p_welch": 0.4289,
+    "mannwhitney_p": 0.4144
+  },
+  "Spending": {
+    "female_mean": 51.53,
+    "male_mean": 48.51,
+    "t": 0.805,
+    "p_welch": 0.422,
+    "mannwhitney_p": 0.5713
+  }
+}

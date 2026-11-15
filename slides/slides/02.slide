@@ -1,0 +1,33 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', display: 'flex', flexDirection: 'column' }}>
+  <Box style={{ height: 64, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+    <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>Two questions the mall cannot answer</Text>
+    <Text style={{ fontSize: 16, color: '#FFFFFF', opacity: 0.8 }}>02 · Problem</Text>
+  </Box>
+
+  <Box style={{ marginTop: 28, background: '#E8EFF8', borderLeft: '4px solid #1E4FA8', padding: '18px 24px' }}>
+    <Text style={{ fontSize: 20, color: '#1A2230', lineHeight: 1.5 }}>Customers with the same income can differ by <span style={{ fontWeight: 'bold', color: '#1E4FA8' }}>65 points of spending</span>. An offer designed for the average customer is designed for nobody.</Text>
+  </Box>
+
+  <Box style={{ marginTop: 32, flexDirection: 'row', gap: 40, height: 330 }}>
+    <Box style={{ flex: 1, flexDirection: 'column', gap: 14 }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>Q1 · STRUCTURE</Text>
+      <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#1A2230', lineHeight: 1.3 }}>How many groups does the data actually contain?</Text>
+      <Text style={{ fontSize: 20, color: '#4A5568', lineHeight: 1.55 }}>Not a number chosen in advance: the answer has to be argued from several internal validity criteria, and it has to survive a different algorithm and a different sample.</Text>
+      <Text style={{ fontSize: 20, color: '#4A5568', lineHeight: 1.55 }}>Output: a partition of 200 customers, with a profile and a size for each group.</Text>
+    </Box>
+
+    <Box style={{ width: 1, background: '#D6DCE5' }} />
+
+    <Box style={{ flex: 1, flexDirection: 'column', gap: 14 }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>Q2 · DEPLOYMENT</Text>
+      <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#1A2230', lineHeight: 1.3 }}>Can a new customer be placed in a group automatically?</Text>
+      <Text style={{ fontSize: 20, color: '#4A5568', lineHeight: 1.55 }}>A segmentation that requires re-running clustering at the till is a report, not a tool. We train a classifier on the group labels and measure how well it reproduces them.</Text>
+      <Text style={{ fontSize: 20, color: '#4A5568', lineHeight: 1.55 }}>Output: a routing rule, plus an honest estimate of how much of its accuracy is circular.</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ position: 'absolute', top: 610, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>Mall Customer Segmentation · Course Project</Text>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>02 / 11</Text>
+  </Box>
+</Slide>

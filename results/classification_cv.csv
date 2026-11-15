@@ -1,0 +1,7 @@
+model,cv_accuracy,cv_accuracy_std,cv_macro_f1,cv_macro_f1_std
+SVM (RBF),0.975,0.0274,0.9721,0.0307
+Random forest,0.96,0.0339,0.9644,0.029
+Logistic regression,0.965,0.03,0.9618,0.0335
+Gradient boosting,0.96,0.02,0.9613,0.0203
+Decision tree,0.95,0.0274,0.9535,0.0222
+k-NN (k=5),0.95,0.0224,0.9433,0.0179

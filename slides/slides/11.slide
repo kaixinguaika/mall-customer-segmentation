@@ -1,0 +1,65 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', display: 'flex', flexDirection: 'column' }}>
+  <Box style={{ height: 64, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+    <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>Key references</Text>
+    <Text style={{ fontSize: 16, color: '#FFFFFF', opacity: 0.8 }}>11 · References</Text>
+  </Box>
+
+  <Box style={{ marginTop: 24, flexDirection: 'column' }}>
+    <Box style={{ flexDirection: 'row', gap: 14, paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+      <Text style={{ width: 34, fontSize: 15, fontWeight: 'bold', color: '#1E4FA8' }}>[1]</Text>
+      <Text style={{ flex: 1, fontSize: 15, color: '#1A2230', lineHeight: 1.4 }}>J. MacQueen, “Some methods for classification and analysis of multivariate observations,” <span style={{ fontWeight: 'bold' }}>Proc. Fifth Berkeley Symp. Math. Statist. Probab.</span>, 1967, pp. 281–297.</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 14, paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+      <Text style={{ width: 34, fontSize: 15, fontWeight: 'bold', color: '#1E4FA8' }}>[2]</Text>
+      <Text style={{ flex: 1, fontSize: 15, color: '#1A2230', lineHeight: 1.4 }}>J. A. Hartigan and M. A. Wong, “Algorithm AS 136: A K-means clustering algorithm,” <span style={{ fontWeight: 'bold' }}>J. R. Stat. Soc. C</span>, vol. 28, no. 1, pp. 100–108, 1979.</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 14, paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+      <Text style={{ width: 34, fontSize: 15, fontWeight: 'bold', color: '#1E4FA8' }}>[3]</Text>
+      <Text style={{ flex: 1, fontSize: 15, color: '#1A2230', lineHeight: 1.4 }}>P. J. Rousseeuw, “Silhouettes: a graphical aid to the interpretation and validation of cluster analysis,” <span style={{ fontWeight: 'bold' }}>J. Comput. Appl. Math.</span>, vol. 20, pp. 53–65, 1987.</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 14, paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+      <Text style={{ width: 34, fontSize: 15, fontWeight: 'bold', color: '#1E4FA8' }}>[4]</Text>
+      <Text style={{ flex: 1, fontSize: 15, color: '#1A2230', lineHeight: 1.4 }}>D. L. Davies and D. W. Bouldin, “A cluster separation measure,” <span style={{ fontWeight: 'bold' }}>IEEE Trans. Pattern Anal. Mach. Intell.</span>, vol. 1, no. 2, pp. 224–227, 1979.</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 14, paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+      <Text style={{ width: 34, fontSize: 15, fontWeight: 'bold', color: '#1E4FA8' }}>[5]</Text>
+      <Text style={{ flex: 1, fontSize: 15, color: '#1A2230', lineHeight: 1.4 }}>L. Hubert and P. Arabie, “Comparing partitions,” <span style={{ fontWeight: 'bold' }}>J. Classification</span>, vol. 2, no. 1, pp. 193–218, 1985.</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 14, paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+      <Text style={{ width: 34, fontSize: 15, fontWeight: 'bold', color: '#1E4FA8' }}>[6]</Text>
+      <Text style={{ flex: 1, fontSize: 15, color: '#1A2230', lineHeight: 1.4 }}>M. Ester, H.-P. Kriegel, J. Sander, and X. Xu, “A density-based algorithm for discovering clusters in large spatial databases with noise,” <span style={{ fontWeight: 'bold' }}>Proc. KDD</span>, 1996, pp. 226–231.</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 14, paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+      <Text style={{ width: 34, fontSize: 15, fontWeight: 'bold', color: '#1E4FA8' }}>[7]</Text>
+      <Text style={{ flex: 1, fontSize: 15, color: '#1A2230', lineHeight: 1.4 }}>C. Cortes and V. Vapnik, “Support-vector networks,” <span style={{ fontWeight: 'bold' }}>Machine Learning</span>, vol. 20, no. 3, pp. 273–297, 1995.</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 14, paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+      <Text style={{ width: 34, fontSize: 15, fontWeight: 'bold', color: '#1E4FA8' }}>[8]</Text>
+      <Text style={{ flex: 1, fontSize: 15, color: '#1A2230', lineHeight: 1.4 }}>F. Pedregosa et al., “Scikit-learn: machine learning in Python,” <span style={{ fontWeight: 'bold' }}>J. Mach. Learn. Res.</span>, vol. 12, pp. 2825–2830, 2011.</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 14, paddingTop: 8, paddingBottom: 8, borderBottom: '1px solid #D6DCE5' }}>
+      <Text style={{ width: 34, fontSize: 15, fontWeight: 'bold', color: '#1E4FA8' }}>[9]</Text>
+      <Text style={{ flex: 1, fontSize: 15, color: '#1A2230', lineHeight: 1.4 }}>G. Punj and D. W. Stewart, “Cluster analysis in marketing research: review and suggestions for application,” <span style={{ fontWeight: 'bold' }}>J. Marketing Research</span>, vol. 20, no. 2, pp. 134–148, 1983.</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 14, paddingTop: 8, paddingBottom: 8 }}>
+      <Text style={{ width: 34, fontSize: 15, fontWeight: 'bold', color: '#1E4FA8' }}>[10]</Text>
+      <Text style={{ flex: 1, fontSize: 15, color: '#1A2230', lineHeight: 1.4 }}>V. Choudhary, “Mall customer segmentation data,” Kaggle, 2019. [Online]. Available: https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python</Text>
+    </Box>
+  </Box>
+
+  <Text style={{ marginTop: 14, fontSize: 14, color: '#8B97A8' }}>Full bibliography, code and figures: https://github.com/kaixinguaika/mall-customer-segmentation</Text>
+
+  <Box style={{ position: 'absolute', top: 610, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>Mall Customer Segmentation · Course Project</Text>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>11 / 11</Text>
+  </Box>
+</Slide>

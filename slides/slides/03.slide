@@ -1,0 +1,46 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '60px', display: 'flex', flexDirection: 'column' }}>
+  <Box style={{ height: 64, background: '#1E4FA8', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingLeft: 24, paddingRight: 24 }}>
+    <Text style={{ fontSize: 32, fontWeight: 'bold', color: '#FFFFFF' }}>200 customers, five visible blocks</Text>
+    <Text style={{ fontSize: 16, color: '#FFFFFF', opacity: 0.8 }}>03 · Data &amp; EDA</Text>
+  </Box>
+
+  <Box style={{ marginTop: 30, flexDirection: 'row', gap: 40 }}>
+    <Box style={{ flex: 1, flexDirection: 'column', gap: 18 }}>
+      <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>MALL CUSTOMER SEGMENTATION DATA · KAGGLE</Text>
+
+      <Box style={{ flexDirection: 'row', gap: 12 }}>
+        <Text style={{ fontSize: 20, color: '#1E4FA8', fontWeight: 'bold' }}>200 × 5</Text>
+        <Text style={{ fontSize: 20, color: '#4A5568', lineHeight: 1.5 }}>records and fields; no missing values, no duplicated identifiers.</Text>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 12 }}>
+        <Text style={{ fontSize: 20, color: '#1E4FA8', fontWeight: 'bold' }}>r = 0.01</Text>
+        <Text style={{ fontSize: 20, color: '#4A5568', lineHeight: 1.5 }}>income vs. spending — the two axes are independent, so a linear model sees nothing.</Text>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 12 }}>
+        <Text style={{ fontSize: 20, color: '#1E4FA8', fontWeight: 'bold' }}>r = −0.33</Text>
+        <Text style={{ fontSize: 20, color: '#4A5568', lineHeight: 1.5 }}>age vs. spending: older customers spend less at any income level.</Text>
+      </Box>
+
+      <Box style={{ flexDirection: 'row', gap: 12 }}>
+        <Text style={{ fontSize: 20, color: '#1E4FA8', fontWeight: 'bold' }}>p &gt; 0.40</Text>
+        <Text style={{ fontSize: 20, color: '#4A5568', lineHeight: 1.5 }}>gender on all three attributes (Welch t-test, confirmed by Mann–Whitney).</Text>
+      </Box>
+
+      <Box style={{ marginTop: 8, background: '#E8EFF8', borderLeft: '4px solid #1E4FA8', padding: '16px 20px' }}>
+        <Text style={{ fontSize: 20, color: '#1A2230', lineHeight: 1.5 }}>The structure is in the <span style={{ fontWeight: 'bold' }}>joint position</span> of a customer, not in either coordinate.</Text>
+      </Box>
+    </Box>
+
+    <Box style={{ width: 520, flexDirection: 'column', gap: 10 }}>
+      <Image src="assets/eda_scatter.png" style={{ width: 520, height: 444, objectFit: 'contain' }} />
+      <Text style={{ fontSize: 14, color: '#8B97A8', lineHeight: 1.4 }}>Income vs. spending score, coloured by gender. Five blocks are visible by eye before any model is fitted.</Text>
+    </Box>
+  </Box>
+
+  <Box style={{ position: 'absolute', top: 610, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'space-between' }}>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>Mall Customer Segmentation · Course Project</Text>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>03 / 11</Text>
+  </Box>
+</Slide>
