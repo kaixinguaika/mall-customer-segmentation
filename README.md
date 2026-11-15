@@ -49,7 +49,8 @@ src/03_classification.py    # 6 classifiers, CV + hold-out, confusion, importanc
 figures/                    # fig1 ... fig13 (300 dpi, generated)
 results/                    # every number in the report, as CSV / JSON
 report/report.html          # ICML-style source (two columns, 10 pt Times)
-report/report.pdf           # 9-page submission version
+report/report.pdf           # 9-page submission version (print-ready)
+report/report.docx          # same layout in Word (8 pages, editable, full-width tables)
 slides/Mall_Customer_Segmentation.pptx   # 11-slide deck for the 4-5 minute talk
 slides/DESIGN.md            # deck design spec (palette, type scale, page plan)
 ```
