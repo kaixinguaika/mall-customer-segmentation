@@ -23,7 +23,7 @@
         </Box>
       </Box>
 
-      <Text style={{ fontSize: 19, color: '#4A5568', lineHeight: 1.5 }}>Six classifiers were tried; all exceeded 94% CV accuracy, so the simplest competitive model would do. Errors fall only between adjacent segments, never between distant ones.</Text>
+      <Text style={{ fontSize: 19, color: '#4A5568', lineHeight: 1.5 }}>Six classifiers were tried; all exceeded 94% CV accuracy, so the simplest competitive model would do. All four errors are confusions into the central Standard group; no Target customer is misclassified.</Text>
       <Text style={{ fontSize: 19, color: '#4A5568', lineHeight: 1.5 }}>Feature importance confirms the geometry: spending 0.46, income 0.44, age 0.09, gender 0.004.</Text>
 
       <Box style={{ marginTop: 6, border: '1px solid #D9534F', padding: '14px 18px', flexDirection: 'column', gap: 8 }}>

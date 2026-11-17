@@ -12,7 +12,7 @@ The study asks two questions: **how many behaviourally distinct shopper groups e
 |---|---|
 | Customers / features | 200 / 5 (`CustomerID`, `Gender`, `Age`, `Annual Income`, `Spending Score`) |
 | Clustering space | standardised **Annual Income + Spending Score** |
-| Selected model | K-Means, **k = 5** (agrees with elbow, silhouette, Davies–Bouldin, Calinski–Harabasz) |
+| Selected model | K-Means, **k = 5** (elbow, silhouette and Davies–Bouldin agree; Calinski–Harabasz is secondary) |
 | Silhouette / DB / CH | **0.555** / 0.572 / 248.6 |
 | Bootstrap stability | **ARI 0.979 ± 0.025** (30 resamples) |
 | Algorithm agreement | Ward ARI 0.942, Gaussian mixture ARI 0.957, DBSCAN ARI 0.273 |
@@ -84,7 +84,7 @@ To regenerate the PDF report from the HTML source (Windows, Edge or Chrome headl
 
 1. **EDA** — no missing values or duplicates; income and spending are uncorrelated (*r* = 0.01), age correlates negatively with spending (*r* = −0.33); gender shows no significant difference (Welch *t*-test, *p* > 0.40, confirmed by Mann–Whitney).
 2. **Feature space** — income + spending, z-scored. Adding age *lowers* the silhouette from 0.555 to 0.417, so age is kept as a descriptive variable instead.
-3. **Model selection** — four internal indices over k = 2…10; all point to k = 5.
+3. **Model selection** — four internal indices over k = 2…10. Elbow, silhouette (0.555) and Davies–Bouldin (0.572) select k = 5; Calinski–Harabasz peaks at k = 9 and is treated as secondary because it rewards finer partitions.
 4. **Validation** — 30 bootstrap resamples (ARI 0.979) and four alternative algorithms; DBSCAN fails because the groups are separated by gaps of varying width, not by uniform low-density regions.
 5. **Assignment** — six classifiers reproduce the segmentation from a customer profile. The best is an RBF SVM at 97.5% CV accuracy. Because the labels are derived from two of the inputs, this accuracy is partly circular; a **demographics-only** baseline reaches 40.0%, i.e. the majority-class rate, and is reported as the honest limit.
 
@@ -93,7 +93,7 @@ To regenerate the PDF report from the HTML source (Windows, Edge or Chrome headl
 ## Notes and limitations
 
 - The dataset is small (200 records) and the "spending score" is an opaque mall-assigned summary, not revenue; the segmentation is cross-sectional, with no recency or frequency information.
-- `k = 5` is well supported but remains a modelling choice: k = 6 is only marginally worse on silhouette and would split the central group.
+- `k = 5` is well supported but remains a modelling choice: k = 6 is only marginally worse on silhouette and would split the affluent high-spending Target segment.
 - The classifier is a **deployment convenience** (a cheap routing rule), not evidence that segment membership is predictable from demographics.
 
 ## References

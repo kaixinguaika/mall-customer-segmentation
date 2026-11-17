@@ -17,7 +17,7 @@
         <Text style={{ fontSize: 18, color: '#1A2230', fontWeight: 'bold' }}>Luzhen Liu · 202612231056</Text>
         <Text style={{ fontSize: 16, color: '#8B97A8' }}>Control Engineering, Class 3, Nanjing University of Information Science and Technology</Text>
       </Box>
-      <Text style={{ fontSize: 16, color: '#8B97A8' }}>10 November 2026</Text>
+      <Text style={{ fontSize: 16, color: '#8B97A8' }}>November 2026</Text>
     </Box>
   </Box>
 </Slide>

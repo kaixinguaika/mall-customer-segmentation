@@ -30,7 +30,7 @@
 
   <Box style={{ marginTop: 20, background: '#F7F9FC', border: '1px solid #D6DCE5', padding: '14px 20px', flexDirection: 'column', gap: 6 }}>
     <Text style={{ fontSize: 15, fontWeight: 'bold', color: '#1E4FA8', letterSpacing: 1 }}>LIMITATIONS</Text>
-    <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.45 }}>200 records limit inference on the smallest segment; the spending score is an opaque proxy, not revenue; the design is cross-sectional, with no recency or frequency; and k = 6 remains defensible — it would split the central group.</Text>
+    <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.45 }}>200 records limit inference on the smallest segment; the spending score is an opaque proxy, not revenue; the design is cross-sectional, with no recency or frequency; and k = 6 remains defensible — it would split the affluent Target segment.</Text>
   </Box>
 
   <Box style={{ position: 'absolute', top: 610, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'space-between' }}>

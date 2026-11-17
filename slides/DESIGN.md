@@ -56,7 +56,7 @@
 | 2 | Two questions the mall cannot answer | content | supporting / valley | 信息横幅 + 左右两区（Q1 / Q2） | — | Q1 有几个客群；Q2 新客能否自动归类 |
 | 3 | 200 customers, five visible blocks | content | supporting / valley | 左文右图 5:6 | L1 eda_scatter | 收入与消费不相关 r=0.01，结构在联合分布里 |
 | 4 | Method: validate before believing | content | supporting / valley | 四阶段流程链 + 公式 | — | EDA → 聚类 → 四指标选 k → 稳定性/多算法 → 分类器 |
-| 5 | Four indices, one answer: k = 5 | content | hero / peak | 上图下三数 | L1 k_selection | 轮廓 0.555、DB 0.572、CH 248.6 |
+| 5 | Three indices agree: k = 5 | content | hero / peak | 上图下三数 | L1 k_selection | 轮廓 0.555、DB 0.572、CH 248.6 |
 | 6 | Not an artefact: ARI 0.979 | content | supporting / valley | 左右两区 + 表 | — | 30 次自助抽样；Ward 0.942 / GMM 0.957 / DBSCAN 0.273 及其原因 |
 | 7 | Five segments, one map | content | hero / peak | 左图右表 | L1 segments | 5 群规模与均值 |
 | 8 | One segment, one action | content | supporting / valley | 五行条目清单（细线分隔） | — | 每群一条动作 + 理由 |

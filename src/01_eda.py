@@ -29,7 +29,6 @@ quality = {
     "gender_counts": {k: int(v) for k, v in df.Gender.value_counts().items()},
 }
 dump(quality, "data_quality.json")
-print(json.dumps(quality, indent=2, ensure_ascii=False) if False else "")
 
 # --------------------------------------------------------- descriptive summary
 num = df[["Age", "Income", "Spending"]]
