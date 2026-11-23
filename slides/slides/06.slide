@@ -34,8 +34,12 @@
     </Box>
   </Box>
 
-  <Box style={{ marginTop: 26, background: '#E8EFF8', borderLeft: '4px solid #1E4FA8', padding: '18px 24px' }}>
+  <Box style={{ marginTop: 26, background: '#E8EFF8', borderLeft: '4px solid #1E4FA8', padding: '14px 24px' }}>
     <Text style={{ fontSize: 19, color: '#1A2230', lineHeight: 1.5 }}>Three methods with different inductive biases find the same five groups. DBSCAN cannot: group densities differ by a factor of about 2.5 <span style={{ fontWeight: 'bold' }}>(Frugal 0.115 vs 0.27–0.29 in 5-NN distance)</span>, so no single global radius isolates five of them — a failure that explains itself.</Text>
   </Box>
 
+
+  <Box style={{ position: 'absolute', top: 686, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'flex-end' }}>
+    <Text style={{ fontSize: 13, color: '#8B97A8' }}>06 / 12</Text>
+  </Box>
 </Slide>

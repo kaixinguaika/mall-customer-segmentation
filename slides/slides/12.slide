@@ -34,4 +34,8 @@
     <Text style={{ fontSize: 19, color: '#1A2230', lineHeight: 1.5 }}>These studies motivate two choices in this project: <span style={{ fontWeight: 'bold' }}>validate against alternative algorithms</span> (Section 5.2) and treat <span style={{ fontWeight: 'bold' }}>longitudinal segmentation</span> as future work (Section 7.3).</Text>
   </Box>
 
+
+  <Box style={{ position: 'absolute', top: 686, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'flex-end' }}>
+    <Text style={{ fontSize: 13, color: '#8B97A8' }}>12 / 12</Text>
+  </Box>
 </Slide>

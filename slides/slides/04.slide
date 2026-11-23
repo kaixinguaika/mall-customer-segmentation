@@ -52,4 +52,8 @@
     <Text style={{ fontSize: 20, color: '#1A2230', lineHeight: 1.5 }}>Each step carries a check: <span style={{ fontWeight: 'bold' }}>k is argued, and the partition is tested against resampling and against other algorithms</span> before any business reading is attempted.</Text>
   </Box>
 
+
+  <Box style={{ position: 'absolute', top: 686, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'flex-end' }}>
+    <Text style={{ fontSize: 13, color: '#8B97A8' }}>04 / 12</Text>
+  </Box>
 </Slide>

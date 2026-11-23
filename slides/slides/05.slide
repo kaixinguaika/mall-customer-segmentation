@@ -35,4 +35,8 @@
     <Text style={{ fontSize: 20, color: '#1A2230', lineHeight: 1.5 }}><span style={{ fontWeight: 'bold' }}>k = 5 is not a preference.</span> Silhouette and DB peak there, the elbow agrees; CH favours finer partitions and peaks at 9, so we treat it as secondary.</Text>
   </Box>
 
+
+  <Box style={{ position: 'absolute', top: 686, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'flex-end' }}>
+    <Text style={{ fontSize: 13, color: '#8B97A8' }}>05 / 12</Text>
+  </Box>
 </Slide>

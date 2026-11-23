@@ -33,4 +33,8 @@
     <Text style={{ fontSize: 17, color: '#4A5568', lineHeight: 1.45 }}>200 records limit inference on the smallest segment; the spending score is an opaque proxy, not revenue; the design is cross-sectional, with no recency or frequency; and k = 6 remains defensible — it would split the affluent Target segment.</Text>
   </Box>
 
+
+  <Box style={{ position: 'absolute', top: 686, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'flex-end' }}>
+    <Text style={{ fontSize: 13, color: '#8B97A8' }}>10 / 12</Text>
+  </Box>
 </Slide>

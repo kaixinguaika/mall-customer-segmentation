@@ -39,4 +39,8 @@
     </Box>
   </Box>
 
+
+  <Box style={{ position: 'absolute', top: 686, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'flex-end' }}>
+    <Text style={{ fontSize: 13, color: '#8B97A8' }}>03 / 12</Text>
+  </Box>
 </Slide>
