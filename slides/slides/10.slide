@@ -35,6 +35,6 @@
 
   <Box style={{ position: 'absolute', top: 610, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'space-between' }}>
     <Text style={{ fontSize: 14, color: '#8B97A8' }}>Mall Customer Segmentation · Course Project</Text>
-    <Text style={{ fontSize: 14, color: '#8B97A8' }}>10 / 11</Text>
+    <Text style={{ fontSize: 14, color: '#8B97A8' }}>10 / 12</Text>
   </Box>
 </Slide>

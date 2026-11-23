@@ -51,7 +51,7 @@ results/                    # every number in the report, as CSV / JSON
 report/report.html          # ICML-style source (two columns, 10 pt Times)
 report/report.pdf           # 9-page submission version (print-ready)
 report/report.docx          # same layout in Word (8 pages, editable, full-width tables)
-slides/Mall_Customer_Segmentation.pptx   # 11-slide deck for the 4-5 minute talk
+slides/Mall_Customer_Segmentation.pptx   # 12-slide deck for the 4-5 minute talk
 slides/DESIGN.md            # deck design spec (palette, type scale, page plan)
 ```
 
@@ -98,6 +98,8 @@ To regenerate the PDF report from the HTML source (Windows, Edge or Chrome headl
 
 ## References
 
-Key sources: MacQueen (1967); Hartigan & Wong (1979); Rousseeuw (1987); Davies & Bouldin (1979); Hubert & Arabie (1985); Ward (1963); Ester et al. (1996); Cortes & Vapnik (1995); Breiman (2001); Pedregosa et al. (2011); Punj & Stewart (1983); Wedel & Kamakura (2000). Full bibliography in `report/report.pdf`.
+Foundational sources: MacQueen (1967); Hartigan & Wong (1979); Rousseeuw (1987); Davies & Bouldin (1979); Hubert & Arabie (1985); Ward (1963); Ester et al. (1996); Cortes & Vapnik (1995); Breiman (2001); Pedregosa et al. (2011); Punj & Stewart (1983); Wedel & Kamakura (2000).
+
+Recent work: John, Shobayo & Ogunleye (2023, *Analytics*, [doi:10.3390/analytics2040042](https://doi.org/10.3390/analytics2040042)) compared five clustering algorithms on retail RFM data; Kuo, Alfareza & Nguyen (2023, *JESTCH*, [doi:10.1016/j.jestch.2023.101525](https://doi.org/10.1016/j.jestch.2023.101525)) improved customer segmentation with density peaks and a genetic algorithm using ARI/NMI validation; Hamidi & Haghi (2024, *CHBR*, [doi:10.1016/j.chbr.2024.100520](https://doi.org/10.1016/j.chbr.2024.100520)) showed that time-series segmentation can outperform static snapshots. Full bibliography in `report/report.pdf`.
 
 Dataset: [Mall Customer Segmentation Data](https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python) (Kaggle).
