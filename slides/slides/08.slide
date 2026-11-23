@@ -59,8 +59,4 @@
     <Text style={{ fontSize: 19, color: '#1A2230', lineHeight: 1.5 }}>Segment membership should steer <span style={{ fontWeight: 'bold' }}>assortment and service</span>, not the price of an identical product.</Text>
   </Box>
 
-  <Box style={{ position: 'absolute', top: 610, left: 0, width: 1160, flexDirection: 'row', justifyContent: 'space-between' }}>
-    <Text style={{ fontSize: 14, color: '#8B97A8' }}>Mall Customer Segmentation · Course Project</Text>
-    <Text style={{ fontSize: 14, color: '#8B97A8' }}>08 / 12</Text>
-  </Box>
 </Slide>
