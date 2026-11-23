@@ -30,7 +30,7 @@ The study asks two questions: **how many behaviourally distinct shopper groups e
 
 Reading of the segments:
 
-- **Target** — high income, high spend, and the youngest group (33 ± 4 years). Protect with loyalty tiers and early access.
+- **Target** — high income, high spend, and the tightest age band (33 ± 4 years). Protect with loyalty tiers and early access.
 - **Conservative** — the *highest* income but the *lowest* spending: the biggest untapped value pool. Reactivate with premium assortment, not discounts.
 - **Impulsive** — young (25 ± 5) and spending far beyond their income. Trends, social media and instalments beat price cuts.
 - **Frugal** — older, low income, low spend. Value packs, coupons, essentials.
@@ -46,6 +46,8 @@ src/common.py               # paths, plotting style, data loading
 src/01_eda.py               # data quality, distributions, correlations, gender tests
 src/02_clustering.py        # k selection, K-Means, 4 alternative algorithms, profiles
 src/03_classification.py    # 6 classifiers, CV + hold-out, confusion, importances
+src/build_docx.py           # HTML report -> Word version
+src/docx_figs.py            # re-plots the two wide figures at column width
 figures/                    # fig1 ... fig13 (300 dpi, generated)
 results/                    # every number in the report, as CSV / JSON
 report/report.html          # ICML-style source (two columns, 10 pt Times)
@@ -60,7 +62,7 @@ slides/DESIGN.md            # deck design spec (palette, type scale, page plan)
 ## How to run
 
 ```bash
-pip install -r requirements.txt      # numpy, pandas, scikit-learn, matplotlib, seaborn, scipy
+pip install -r requirements.txt      # numpy, pandas, scikit-learn, matplotlib, scipy
 
 python src/01_eda.py                 # EDA -> figures/fig1..fig4, results/*.csv
 python src/02_clustering.py          # clustering -> fig5..fig8, fig13, results/segments.csv
@@ -78,6 +80,13 @@ To regenerate the PDF report from the HTML source (Windows, Edge or Chrome headl
   "file:///C:/path/to/report/report.html"
 ```
 
+The Word version is generated from the same HTML (it needs `python-docx` and `beautifulsoup4`, both in `requirements.txt`):
+
+```bash
+python src/docx_figs.py     # narrow variants of Fig. 4 and Fig. 5
+python src/build_docx.py    # -> report/report.docx
+```
+
 ---
 
 ## Method summary
@@ -85,7 +94,7 @@ To regenerate the PDF report from the HTML source (Windows, Edge or Chrome headl
 1. **EDA** — no missing values or duplicates; income and spending are uncorrelated (*r* = 0.01), age correlates negatively with spending (*r* = −0.33); gender shows no significant difference (Welch *t*-test, *p* > 0.40, confirmed by Mann–Whitney).
 2. **Feature space** — income + spending, z-scored. Adding age *lowers* the silhouette from 0.555 to 0.417, so age is kept as a descriptive variable instead.
 3. **Model selection** — four internal indices over k = 2…10. Elbow, silhouette (0.555) and Davies–Bouldin (0.572) select k = 5; Calinski–Harabasz peaks at k = 9 and is treated as secondary because it rewards finer partitions.
-4. **Validation** — 30 bootstrap resamples (ARI 0.979) and four alternative algorithms; DBSCAN fails because the groups are separated by gaps of varying width, not by uniform low-density regions.
+4. **Validation** — 30 bootstrap resamples (ARI 0.979) and four alternative algorithms; DBSCAN fails because cluster densities differ by a factor of ~2.5 (mean 5-NN distance 0.115 in Frugal vs 0.27–0.29 elsewhere), so one global radius cannot isolate five groups.
 5. **Assignment** — six classifiers reproduce the segmentation from a customer profile. The best is an RBF SVM at 97.5% CV accuracy. Because the labels are derived from two of the inputs, this accuracy is partly circular; a **demographics-only** baseline reaches 40.0%, i.e. the majority-class rate, and is reported as the honest limit.
 
 ---

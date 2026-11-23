@@ -22,9 +22,12 @@ BODY = 10
 GRAY = RGBColor(0x8B, 0x97, 0xA8)
 
 # figures that were re-plotted at column width for this version
+# name -> (path, width in cm) for figures that need a Word-specific rendering
 DOCX_FIGS = {
-    "fig4_by_gender.png": REPORT / "docx_assets" / "fig4_docx.png",
-    "fig5_k_selection.png": REPORT / "docx_assets" / "fig5_docx.png",
+    "fig4_by_gender.png": (REPORT / "docx_assets" / "fig4_docx.png", 8.45),
+    "fig5_k_selection.png": (REPORT / "docx_assets" / "fig5_docx.png", 8.45),
+    # the appendix figure is taller than the column: keep it on the same page as Table A2
+    "fig13_segment_signature.png": (ROOT / "figures" / "fig13_segment_signature.png", 6.3),
 }
 
 
@@ -293,14 +296,15 @@ def walk(node):
             if img is not None:
                 src = Path(img["src"].replace("../", ""))
                 name = src.name
-                path = DOCX_FIGS.get(name, ROOT / src.as_posix())
+                path, width_cm = DOCX_FIGS.get(name, (ROOT / src.as_posix(), 8.45))
                 if Path(path).exists():
                     p = para(doc, after=2, line=1.0)
                     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
                     p.paragraph_format.keep_with_next = True
-                    p.add_run().add_picture(str(path), width=COL_W)
+                    p.add_run().add_picture(str(path), width=Cm(width_cm))
             if cap is not None:
                 p = para(doc, size=8.4, after=7, line=1.03)
+                p.paragraph_format.keep_together = True
                 add_inline(p, cap, size=8.4)
 
         elif child.name == "div" and "tabwrap" in cls:

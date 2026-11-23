@@ -3,3 +3,4 @@ __pycache__/
 .ipynb_checkpoints/
 report/prev_*.png
 slides/.slidep/
+slides/.cache/
